@@ -1,25 +1,25 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/danielstgt/laravel-mix-svg-vue/master/art/logo.png">
+    <img src="https://raw.githubusercontent.com/georgehanson/laravel-mix-svg-vue/master/art/logo.png">
 </p>
 
 <p align="center">
-    <a href="https://www.npmjs.com/package/laravel-mix-svg-vue"><img src="https://img.shields.io/npm/v/laravel-mix-svg-vue.svg?color=blue" alt="Latest Version"></a>
-    <a href="https://www.npmjs.com/package/laravel-mix-svg-vue"><img src="https://img.shields.io/npm/l/laravel-mix-svg-vue.svg?color=blueviolet" alt="License"></a>
-    <a href="https://npmcharts.com/compare/laravel-mix-svg-vue?minimal=true"><img src="https://img.shields.io/npm/dm/laravel-mix-svg-vue.svg" alt="Downloads"></a>
+    <a href="https://www.npmjs.com/package/laravel-mix-svg-vue-gh"><img src="https://img.shields.io/npm/v/laravel-mix-svg-vue.svg?color=blue" alt="Latest Version"></a>
+    <a href="https://www.npmjs.com/package/laravel-mix-svg-vue-gh"><img src="https://img.shields.io/npm/l/laravel-mix-svg-vue.svg?color=blueviolet" alt="License"></a>
+    <a href="https://npmcharts.com/compare/laravel-mix-svg-vue-gh?minimal=true"><img src="https://img.shields.io/npm/dm/laravel-mix-svg-vue.svg" alt="Downloads"></a>
 </p>
 
 # Laravel Mix SVG Vue
-
+## A fork from Danielstgt
 **Extension to inline SVG files with Vue.js and optimize them automatically with SVGO.**
 
 ## Installation
 
 ```sh
 # npm
-npm install laravel-mix-svg-vue
+npm install laravel-mix-svg-vue-gh
 
 # yarn
-yarn add laravel-mix-svg-vue
+yarn add laravel-mix-svg-vue-gh
 ```
 
 Next require the extension inside your Laravel Mix config and call `svgVue()` in your pipeline:

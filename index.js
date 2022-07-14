@@ -1,6 +1,5 @@
 let mix = require('laravel-mix');
 let path = require('path');
-const { extendDefaultPlugins } = require('svgo');
 
 class SvgVue {
 
@@ -50,7 +49,14 @@ class SvgVue {
                 {
                     loader: 'svgo-loader',
                     options: {
-                        plugins: extendDefaultPlugins(this._convertSvgoOptions(this.options.svgoSettings))
+                        plugins: [
+                            {
+                                name: 'preset-default',
+                                params: {
+                                    overrides: this.options.svgoSettings
+                                },
+                            },
+                        ],
                     }
                 }
             ]
@@ -101,24 +107,6 @@ class SvgVue {
 
         return false;
     }
-
-    _convertSvgoOptions(options) {
-        let converted = [];
-
-        options.forEach(option => {
-            let settings = Object.keys(option);
-
-            settings.forEach(setting => {
-                converted.push({
-                    name: setting,
-                    active: option[setting]
-                });
-            });
-        });
-
-        return converted;
-    }
-
 }
 
 mix.extend('svgVue', new SvgVue());
