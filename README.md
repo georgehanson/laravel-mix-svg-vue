@@ -27,7 +27,7 @@ Next require the extension inside your Laravel Mix config and call `svgVue()` in
 ```js
 // webpack.mix.js
 const mix = require('laravel-mix');
-require('laravel-mix-svg-vue');
+require('laravel-mix-svg-vue-gh');
 
 mix.js('resources/js/app.js', 'public/js')
     // .vue() // only necessary if you are using mix v6
